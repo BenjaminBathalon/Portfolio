@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Bathalon — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body data-component="Scrolly">
+    <div class="loading-screen">
+        <img src="./../assets/images/head.webp" alt="Chargement" class="loading-image">
+    </div>
+    <div class="paper-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class=" site-header">
+            <div class="wrapper">
+                <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+                    <img src="./../assets/images/logo.png" alt="Logo">
+                </a>
+
+                <nav class="desktop-nav middle" aria-label="Navigation principale">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#apropos">À propos</a>
+                    <a href="#projets">Projets</a>
+                </nav>
+
+                <nav class="desktop-nav desktop-nav-right" aria-label="Liens">
+                    <a href="https://www.youtube.com/@BBathss">Youtube</a>
+                    <a href="tel:+4383956251">Linkedin</a>
+                    <a href="mailto:benjaminbathalonpro@gmail.com">Courriel</a>
+                    <a href="#contact">CV</a>
+                </nav>
+
+                <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <div class="mobile-menu">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#apropos">À propos</a>
+                    <a href="#video">Youtube</a>
+                    <a href="#contact">Linkedin</a>
+                    <a href="#contact">Courriel</a>
+                    <a href="#contact">CV</a>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+
+    <main>
+        <section id="accueil" class="hero section-grid">
+            <img src="assets/images/Card.png" alt="photo1" data-scrolly="fromRight" />
+
+            <div class="hero-copy">
+                <h1 data-scrolly="fromBottom">
+                    Benjamin
+                    <br />
+                    <span class="bigboy">Bathalon</span>
+                </h1>
+                <p class="subtitle" data-scrolly="fromBottom">Game designer / Monteur vidéo</p>
+                <p class="intro" data-scrolly="fromBottom">Je donne vie aux idées, un média à la fois.</p>
+                <div class="hero-actions" data-scrolly="fromBottom">
+                    <a class="btn btn-light" href="https://www.youtube.com/watch?v=9nKPvrGvXmk">
+                        ÉCOUTER MA VIDÉO
+                        <span>→</span>
+                    </a>
+                    <a class="btn btn-light" href="#projets">
+                        VOIR MES PROJETS
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="video" class="pleasegodown"></div>
+        <section class="video-section section-grid">
+            <h2 data-scrolly="fromBottom">Voir mon Démo Reel</h2>
+
+            <div class="video" data-component="Youtube" data-video-id="zCMuNRr7SuM">
+                <div class="video_media js-video">
+                    <img class="js-poster" src="assets/images/demoreelplaceholder.webp" alt="poster3" />
+                    <p>→</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="apropos" class="pleasegodown"></div>
+        <section class="about section-grid">
+            <div class="about-title">
+                <h2 data-scrolly="fromTop">Qui suis-je?</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-upper">
+                    <p class="about-text" data-scrolly="fromLeft">
+                        Je suis une personne
+                        <strong>créative et dynamique</strong>
+                        capable de mettre en œuvre mes idées afin de créer des résultats
+                        <strong>intéressants et palpitants</strong>
+                        . Je suis un travailleur à l’écoute qui sait s’ajuster aux contraintes afin d’amener au meilleur résultat.
+                    </p>
+                    <img src="assets/images/Card2.png" alt="Photo Picture2" data-scrolly="fromRight" />
+                </div>
+
+                <h3>En d'autres mots...</h3>
+
+                <img src="assets/images/mindmap.png" alt="mindmap" />
+            </div>
+        </section>
+
+        <div id="projets" class="pleasegodown"></div>
+        <section class="projects section-grid">
+            <h2 data-scrolly="fromBottom">Mes Projets</h2>
+
+            <div class="project-grid">
+                <a href="https://www.behance.net/gallery/256745577/Fight-For-Glory?" class="project-card" data-scrolly="fromBottom">
+                    <img src="assets/images/ff.png" alt="ff" />
+                    <div class="project-info">
+                        <h3>FIGHT FOR GLORY</h3>
+                        <p>Concept et illustration d’un jeu de société</p>
+                        <p>2026</p>
+                        <p>→</p>
+                    </div>
+                </a>
+
+                <a href="https://www.behance.net/gallery/256745577/Fight-For-Glory?" class="project-card" data-scrolly="fromBottom">
+                    <img src="assets/images/pv.png" alt="pv" />
+                    <div class="project-info">
+                        <h3>Pitié ou violence</h3>
+                        <p>Projet interactif offrant un dilemme moral</p>
+                        <p>2026</p>
+                        <p>→</p>
+                    </div>
+                </a>
+
+                <a href="https://www.behance.net/gallery/256745577/Fight-For-Glory?" class="project-card" data-scrolly="fromBottom">
+                    <img src="assets/images/rw.png" alt="rw" />
+                    <div class="project-info">
+                        <h3>REEL DE SITE WEB</h3>
+                        <p>Montage vidéo mettant en valeur un site web</p>
+                        <p>2026</p>
+                        <p>→</p>
+                    </div>
+                </a>
+
+                <a href="https://www.behance.net/gallery/256745577/Fight-For-Glory?" class="project-card" data-scrolly="fromBottom">
+                    <img src="assets/images/tc.png" alt="tc" />
+                    <div class="project-info">
+                        <h3>TYPO CINÉTIQUE</h3>
+                        <p>Animation typographique et direction artistique</p>
+                        <p>2025</p>
+                        <p>→</p>
+                    </div>
+                </a>
+
+                <a href="https://www.behance.net/gallery/256745577/Fight-For-Glory?" class="project-card" data-scrolly="fromBottom">
+                    <img src="assets/images/dg.png" alt="Dg" />
+                    <div class="project-info">
+                        <h3>Danganronpa x silent life but the wheel decides our fate</h3>
+                        <p>Animation 2D basée sur une tendance vidéo-ludique</p>
+                        <p>2025</p>
+                        <p>→</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="internship section-grid">
+            <h2 data-scrolly="fromBottom">Ce que je cherche comme stage :</h2>
+            <div class="sticker-list">
+                <span class="sticker s1" data-scrolly="fromBottom">
+                    <p>Montage Vidéo</p>
+                </span>
+                <span class="sticker s2" data-scrolly="fromBottom">
+                    <p>Production interactive</p>
+                </span>
+                <span class="sticker s3" data-scrolly="fromBottom">
+                    <p>Animation 2D</p>
+                </span>
+                <span class="sticker s4" data-scrolly="fromBottom">
+                    <p>Design UI / UX</p>
+                </span>
+                <span class="sticker s5" data-scrolly="fromBottom">
+                    <p>Jeux-Vidéo</p>
+                </span>
+                <span class="sticker s6" data-scrolly="fromBottom">
+                    <p>Animation 3D</p>
+                </span>
+            </div>
+        </section>
+    </main>
+
+    <div class="video-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-video></div>
+        <div class="modal-card">
+            <button class="modal-close" type="button" aria-label="Fermer">×</button>
+            <div class="video-placeholder">
+                <span>Votre vidéo / Démo Reel</span>
+                <p>Remplacez ce bloc par votre fichier MP4 ou un iframe YouTube.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact" class="footer">
+        <div class="wrapper">
+            <div class="footer-upper">
+                <div class="footer-brand">
+                    <img src="./../assets/images/logo.png" alt="Logo">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <a href="https://www.youtube.com/@BBathss">Youtube</a>
+                        <a href="tel:+4383956251">Linkedin</a>
+                        <a href="mailto:benjaminbathalonpro@gmail.com">Courriel</a>
+                        <a href="#contact">CV</a>
+                    </div>
+                    <p class="contactpls">CONTACTEZ</p>
+                    <a href="mailto:benjaminbathalonpro@gmail.com" class="downlink">benjaminbathalonpro@gmail.com</a>
+                    <a href="tel:+4383956251" class="downlink">438-395-6251</a>
+                    <a href="#" class="download-cv" class="downlink">Télécharger mon CV</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                Tout les design du projet m'appartient, programmation assisté par l'IA.<br>
+                © 2026 Benjamin Bathalon - Tous droits réservés.
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
