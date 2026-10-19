@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link class="headIcon" rel="icon" href="../assets/images/head.webp">
     <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/main.js" defer></script>
 </head>
@@ -18,43 +19,39 @@
     </div>
     <div class="paper-noise" aria-hidden="true"></div>
 
-    <header class="site-header">
-        <div class=" site-header">
-            <div class="wrapper">
-                <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
-                    <img src="assets/images/logo.png" alt="Logo">
-                </a>
+    <header class="site-header" data-component="Header">
+        <div class="wrapper">
+            <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+                <img src="assets/images/logo.png" alt="Logo">
+            </a>
 
-                <nav class="desktop-nav middle" aria-label="Navigation principale">
-                    <a href="#accueil">Accueil</a>
-                    <a href="#apropos">À propos</a>
-                    <a href="#projets">Projets</a>
-                </nav>
+            <nav class="desktop-nav middle" aria-label="Navigation principale">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#projets">Projets</a>
+            </nav>
 
-                <nav class="desktop-nav desktop-nav-right" aria-label="Liens">
-                    <a href="https://www.youtube.com/@BBathss">Youtube</a>
-                    <a href="https://www.linkedin.com/in/benjamin-bathalon-542470241/">Linkedin</a>
-                    <a href="mailto:benjaminbathalonpro@gmail.com">Courriel</a>
-                    <a href="#contact">CV</a>
-                </nav>
+            <nav class="desktop-nav desktop-nav-right" aria-label="Liens">
+                <a href="https://www.youtube.com/@BBathss" target="_blank">Youtube</a>
+                <a href="https://www.linkedin.com/in/benjamin-bathalon-542470241/" target="_blank">Linkedin</a>
+                <a href="mailto:benjaminbathalonpro@gmail.com">Courriel</a>
+                <a href="#contact">CV</a>
+            </nav>
 
-                <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
+            <button class="js-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
 
-                <div class="mobile-menu">
-                    <a href="#accueil">Accueil</a>
-                    <a href="#projets">Projets</a>
-                    <a href="#apropos">À propos</a>
-                    <a href="#video">Youtube</a>
-                    <a href="#contact">Linkedin</a>
-                    <a href="#contact">Courriel</a>
-                    <a href="#contact">CV</a>
-                </div>
+            <div class="mobile-menu" aria-hidden="true">
+                <a href="#accueil">Accueil</a>
+                <a href="#projets">Projets</a>
+                <a href="#apropos">À propos</a>
+                <a href="https://www.youtube.com/@BBathss" target="_blank">Youtube</a>
+                <a href="https://www.linkedin.com/in/benjamin-bathalon-542470241/" target="_blank">Linkedin</a>
+                <a href="mailto:benjaminbathalonpro@gmail.com">Courriel</a>
+                <a href="#contact">CV</a>
             </div>
         </div>
-
-
     </header>
 
 
@@ -89,28 +86,28 @@
         <section class="video-section section-grid">
             <h2 data-scrolly="fromBottom">Voir mon Démo Reel</h2>
 
-            <div class="video" data-component="Youtube" data-video-id="zCMuNRr7SuM">
-                <div class="video_media js-video">
-                    <img class="js-poster" src="assets/images/demoreelplaceholder.webp" alt="poster3" />
-                </div>
+            <div class="demo-reel">
+                <iframe src="https://www.youtube-nocookie.com/embed/GD8Nl1gr8ow?rel=0" title="Démo Reel de Benjamin Bathalon" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
 
         <div id="apropos" class="pleasegodown"></div>
         <section class="about section-grid">
-            <div class="about-title">
-                <h2 data-scrolly="fromTop">Qui suis-je?</h2>
-            </div>
-
             <div class="about-content">
                 <div class="about-upper">
-                    <p class="about-text" data-scrolly="fromLeft">
-                        Je suis une personne
-                        <strong>créative et dynamique</strong>
-                        capable de mettre en œuvre mes idées afin de créer des résultats
-                        <strong>intéressants et palpitants</strong>
-                        . Je suis un travailleur à l’écoute qui sait s’ajuster aux contraintes afin d’amener au meilleur résultat.
-                    </p>
+                    <div class="infotext">
+                        <div class="about-title">
+                            <h2 data-scrolly="fromTop">Qui suis-je?</h2>
+                        </div>
+                        <p class="about-text" data-scrolly="fromLeft">
+                            Je suis une personne
+                            <strong>créative et dynamique</strong>
+                            capable de mettre en œuvre mes idées afin de créer des résultats
+                            <strong>intéressants et palpitants</strong>
+                            . Je suis un travailleur à l’écoute qui sait s’ajuster aux contraintes afin d’amener au meilleur résultat.
+                        </p>
+                    </div>
+
                     <img src="assets/images/Card2.png" alt="Photo Picture2" data-scrolly="fromRight" />
                 </div>
 
@@ -217,24 +214,24 @@
         <div class="wrapper">
             <div class="footer-upper">
                 <div class="footer-brand">
-                    <img src="assets/images/logo.png" alt="Logo">
+                    <img src="./../assets/images/logo.png" alt="Logo">
                 </div>
                 <div class="footer-links">
                     <div class="footer-nav">
-                        <a href="https://www.youtube.com/@BBathss">Youtube</a>
-                        <a href="https://www.linkedin.com/in/benjamin-bathalon-542470241/">Linkedin</a>
+                        <a href="https://www.youtube.com/@BBathss" target="_blank">Youtube</a>
+                        <a href="https://www.linkedin.com/in/benjamin-bathalon-542470241/" target="_blank">Linkedin</a>
                         <a href="mailto:benjaminbathalonpro@gmail.com">Courriel</a>
                         <a href="#contact">CV</a>
                     </div>
                     <p class="contactpls">CONTACTEZ</p>
                     <a href="mailto:benjaminbathalonpro@gmail.com" class="downlink">benjaminbathalonpro@gmail.com</a>
                     <a href="tel:+4383956251" class="downlink">438-395-6251</a>
-                    <a href="#" class="download-cv" class="downlink">Télécharger mon CV</a>
+                    <a href="#" class="download-cv downlink">Télécharger mon CV</a>
                 </div>
             </div>
 
             <div class="copyright">
-                Tout les design du projet m'appartient, programmation assisté par l'IA.<br>
+                Tous les designs du projet m’appartiennent, programmation assisté par ChatGPT pour une maquette de base.<br>
                 © 2026 Benjamin Bathalon - Tous droits réservés.
             </div>
         </div>
