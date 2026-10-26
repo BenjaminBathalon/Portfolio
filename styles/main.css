@@ -1511,6 +1511,7 @@ main {
   margin-inline: auto;
   position: relative;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 h1,
@@ -3261,3 +3262,77 @@ body {
   transform: scale(1, 1);
 }
 /*# sourceMappingURL=main.css.map */
+
+
+/* ==========================================================================
+   PAGE 404 — contenu centré et footer en bas de page
+   ========================================================================== */
+html:has(body.page-404-body) {
+  min-height: 100%;
+}
+body.page-404-body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+body.page-404-body > .site-header {
+  flex: 0 0 auto;
+  width: 100%;
+}
+body.page-404-body > main.page-404 {
+  flex: 1 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(48px, 8vh, 100px) 24px;
+}
+body.page-404-body .page-404-content {
+  width: min(100%, 850px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body.page-404-body .page-404-content h1,
+body.page-404-body .page-404-content h2,
+body.page-404-body .page-404-content p {
+  width: 100%;
+  text-align: center;
+}
+body.page-404-body .page-404-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 24px auto 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body.page-404-body > footer.footer {
+  flex: 0 0 auto;
+  width: 100%;
+  margin-top: auto;
+}
+@media (max-width: 600px) {
+  body.page-404-body > main.page-404 {
+    padding: 40px 20px 56px;
+  }
+  body.page-404-body .page-404-content h2 {
+    font-size: clamp(21px, 5.5vw, 30px);
+    line-height: 1.25;
+  }
+  body.page-404-body .page-404-description {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  body.page-404-body .page-404-button {
+    text-align: center;
+    white-space: normal;
+  }
+}
